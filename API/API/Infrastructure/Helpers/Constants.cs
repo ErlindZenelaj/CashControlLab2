@@ -5,9 +5,8 @@
    
         public static class Roles
         {
-            public const string Agent = "Agent";
-            public const string Kiosk = "Kiosk";
-            public const string Leasing = "Leasing";
+            public const string Client = "Client";
+            public const string Company = "Company";
             public const string Admin = "Admin";
         }
      
