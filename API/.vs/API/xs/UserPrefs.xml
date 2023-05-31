@@ -4,19 +4,30 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="API/appsettings.json">
-    <Files>
-      <File FileName="API/Domain/Common/BaseEntity.cs" Line="5" Column="33" />
-      <File FileName="API/Domain/Entities/User.cs" Line="6" Column="32" />
-      <File FileName="API/Domain/Entities/Company.cs" Line="12" Column="45" />
-      <File FileName="API/appsettings.json" Line="11" Column="68" />
-      <File FileName="API/Application/Presistance/ApplicationDbContext.cs" Line="1" Column="37" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="API" expanded="True">
-            <Node name="API" expanded="True" />
+          <Node name="API" expanded="True" selected="True">
+            <Node name="API" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Application" expanded="True">
+                <Node name="Presistance" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Domain" expanded="True" />
+              <Node name="Infrastructure" expanded="True">
+                <Node name="Common" expanded="True" />
+                <Node name="Extensions" expanded="True" />
+                <Node name="Helpers" expanded="True" />
+              </Node>
+              <Node name="Migrations" expanded="True">
+                <Node name="20230531120206_InitialMigration.cs" expanded="True" />
+                <Node name="20230531132006_UserMigration.cs" expanded="True" />
+                <Node name="20230531132808_CompanyMigration.cs" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
