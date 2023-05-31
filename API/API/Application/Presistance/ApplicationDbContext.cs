@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Domain.Common;
+using API.Domain.Entities;
 
 public class ApplicationDbContext : DbContext
 {
@@ -6,4 +8,8 @@ public class ApplicationDbContext : DbContext
         : base(options)
     {
     }
+    public DbSet<User>Users { get; set; }
+
+
+
 }
