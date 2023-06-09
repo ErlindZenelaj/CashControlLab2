@@ -1,38 +1,42 @@
 ﻿<Properties StartupConfiguration="{1DF4B580-596E-49AD-8436-7CB3FFFEB156}|Default">
-  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="API/Controllers/RolesController.cs">
+    <Files>
+      <File FileName="API/Program.cs" />
+      <File FileName="API/Infrastructure/DI/ApplicationDependencyInjections.cs" />
+      <File FileName="API/Controllers/RolesController.cs" Line="11" Column="26" />
+      <File FileName="API/Controllers/UsersController.cs" />
+      <File FileName="API/Controllers/WeatherForecastController.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="API" expanded="True" selected="True">
+          <Node name="API" expanded="True">
             <Node name="API" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Application" expanded="True">
-                <Node name="Presistance" expanded="True" />
-                <Node name="Repositories" expanded="True" />
+              <Node name="Application" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="RolesController.cs" selected="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True" />
               <Node name="Infrastructure" expanded="True">
-                <Node name="Common" expanded="True" />
+                <Node name="Common" expanded="True">
+                  <Node name="DTO" expanded="True" />
+                </Node>
+                <Node name="DI" expanded="True" />
                 <Node name="Extensions" expanded="True" />
                 <Node name="Helpers" expanded="True" />
               </Node>
-              <Node name="Migrations" expanded="True">
-                <Node name="20230531120206_InitialMigration.cs" expanded="True" />
-                <Node name="20230531132006_UserMigration.cs" expanded="True" />
-                <Node name="20230531132808_CompanyMigration.cs" expanded="True" />
-              </Node>
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

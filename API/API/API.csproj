@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>051959d1-c095-4f76-bd6d-eeef2cd7b096</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,11 +31,13 @@
     <None Remove="Infrastructure\Helpers\" />
     <None Remove="Infrastructure\Extensions\" />
     <None Remove="Infrastructure\DI\" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Infrastructure\Common\DTO\" />
     <Folder Include="Infrastructure\Helpers\" />
     <Folder Include="Infrastructure\Extensions\" />
     <Folder Include="Infrastructure\DI\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,9 @@
 using Application.Common.Interfaces.Services;
 using Application.Helpers;
 using Application.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Application.DI
 {
@@ -17,7 +19,11 @@ namespace Application.DI
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
 
+         
+
         }
+
+
 
     }
 }

@@ -21,7 +21,8 @@ namespace Infrastructure.Persistence
     >,
     IApplicationDbContext
     {
-        public ApplicationDbContext(DbContextOptions options) : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+       : base(options) { }
 
         public DbSet<User> Users { get; set; }
 
@@ -50,6 +51,8 @@ namespace Infrastructure.Persistence
             return result;
         }
 
+    
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
@@ -72,28 +75,7 @@ namespace Infrastructure.Persistence
             });
 
 
-            builder.Entity<ApplicationRole>().HasData(
-                new IdentityRole
-                {
-                    Id = "dd39ace1-b160-4674-bfd7-0f8e6342ddb6",
-                    ConcurrencyStamp = "091150b9-96fd-4152-b8d4-3de4dfa202d8",
-                    Name = "Company",
-                    NormalizedName = "COMPANY"
-                },
-                new IdentityRole
-                {
-                    Id = "770240c4-7e08-42c9-a2f8-ae036241baf5",
-                    ConcurrencyStamp = "a16c39a2-8281-4704-b20d-d4de7ab8b4d3",
-                    Name = "Client",
-                    NormalizedName = "Client"
-                },
-                new IdentityRole
-                {
-                    Id = "58d0254b-0fbc-4a32-a4cf-5b5808bc54ed",
-                    ConcurrencyStamp = "cf9e91bd-3d9d-43b7-bc7f-41e2d3eeafc5",
-                    Name = "Admin",
-                    NormalizedName = "ADMIN"
-                });
+            
         }
 
         //private static DbContextOptions<ApplicationDbContext> GetOptions(string connectionString)
